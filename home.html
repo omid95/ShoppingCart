@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="script.js" defer></script>
+    <title>Buy Iteams</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">BuyIteams</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="row">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/8.jpg" id="img1" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+              <div style="margin-top: 5px;">
+                <span><button onclick="Increment(document.getElementById('text1'))"  class="btn">+</button></span>
+                <span class="textbox"><input type="text" id="text1" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                <span><button onclick="Decrement(document.getElementById('text1'))"   class="btn">-</button></span>
+            </div>
+              
+            <span> <button class="btnn b addtocart" onclick="BuyNow(document.getElementById('text1'),document.getElementById('img1'))">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <img src="images/7.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+                <div style="margin-top: 5px;">
+                  <span><button onclick="Increment(document.getElementById('text2'))"  class="btn">+</button></span>
+                  <span class="textbox"><input type="text" id="text2" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                  <span><button onclick="Decrement(document.getElementById('text2'))"   class="btn">-</button></span>
+              </div>
+              
+            <span> <button class="btnn b addtocart">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+           </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <img src="images/6.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+                <div style="margin-top: 5px;">
+                  <span><button onclick="Increment(document.getElementById('text3'))"  class="btn">+</button></span>
+                  <span class="textbox"><input type="text" id="text3" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                  <span><button onclick="Decrement(document.getElementById('text3'))"   class="btn">-</button></span>
+              </div>
+              
+            <span> <button class="btnn b addtocart">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+           </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <img src="images/5.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+                <div style="margin-top: 5px;">
+                  <span><button onclick="Increment(document.getElementById('text4'))"  class="btn">+</button></span>
+                  <span class="textbox"><input type="text" id="text4" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                  <span><button onclick="Decrement(document.getElementById('text4'))"   class="btn">-</button></span>
+              </div>
+              
+            <span> <button class="btnn b addtocart">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+           </div>
+          </div>
+
+
+
+
+          <div class="row">
+            <div class="card">
+              <div class="card-header">
+                <img src="images/4.jpg" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+                <div style="margin-top: 5px;">
+                  <span><button onclick="Increment(document.getElementById('text5'))"  class="btn">+</button></span>
+                  <span class="textbox"><input type="text" id="text5" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                  <span><button onclick="Decrement(document.getElementById('text5'))"   class="btn">-</button></span>
+              </div>
+              
+            <span> <button class="btnn b addtocart">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+           </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img src="images/3.jpg" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+                <div style="margin-top: 5px;">
+                  <span><button onclick="Increment(document.getElementById('text6'))"  class="btn">+</button></span>
+                  <span class="textbox"><input type="text" id="text6" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                  <span><button onclick="Decrement(document.getElementById('text6'))"   class="btn">-</button></span>
+               </div>
+              
+            <span> <button class="btnn b addtocart">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+           </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img src="images/2.jpg" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+                <div style="margin-top: 5px;">
+                  <span><button onclick="Increment(document.getElementById('text7'))"  class="btn">+</button></span>
+                  <span class="textbox"><input type="text" id="text7" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                  <span><button onclick="Decrement(document.getElementById('text7'))"   class="btn">-</button></span>
+               </div>
+              
+            <span> <button class="btnn b addtocart">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+           </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img src="images/17.jpg" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="card-body">
+                <h4>GROCERY</h4>
+                <h4> $4.99</h4>
+                <div style="margin-top: 5px;">
+                  <span><button onclick="Increment(document.getElementById('text8'))"  class="btn">+</button></span>
+                  <span class="textbox"><input type="text" id="text8" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                  <span><button onclick="Decrement(document.getElementById('text8'))"   class="btn">-</button></span>
+               </div>
+              
+            <span> <button class="btnn b addtocart">BUY NOW</button></span>
+             <span> <button class="btnn b buynow">ADD TO CART</button></span>
+           </div>
+            </div>
+  
+  
+       
+            
+         
+            
+            <div class="container">
+
+                <div class="row">
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="images/15.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <h4>GROCERY</h4>
+                        <h4> $4.99</h4>
+                        <div style="margin-top: 5px;">
+                          <span><button onclick="Increment(document.getElementById('text9'))"  class="btn">+</button></span>
+                          <span class="textbox"><input type="text" id="text9" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                          <span><button onclick="Decrement(document.getElementById('text9'))"   class="btn">-</button></span>
+                       </div>
+                      
+                    <span> <button class="btnn b addtocart">BUY NOW</button></span>
+                     <span> <button class="btnn b buynow">ADD TO CART</button></span>
+                   </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="images/13.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <h4>GROCERY</h4>
+                        <h4> $4.99</h4>
+                        <div style="margin-top: 5px;">
+                          <span><button onclick="Increment(document.getElementById('text10'))"  class="btn">+</button></span>
+                          <span class="textbox"><input type="text" id="text10" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                          <span><button onclick="Decrement(document.getElementById('text10'))"   class="btn">-</button></span>
+                        </div>
+                      
+                    <span> <button class="btnn b addtocart">BUY NOW</button></span>
+                     <span> <button class="btnn b buynow">ADD TO CART</button></span>
+                   </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="images/11.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <h4>GROCERY</h4>
+                      <h4> $4.99</h4>
+                      <div style="margin-top: 5px;">
+                        <span><button onclick="Increment(document.getElementById('text11'))"  class="btn">+</button></span>
+                        <span class="textbox"><input type="text" id="text11" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                        <span><button onclick="Decrement(document.getElementById('text11'))"   class="btn">-</button></span>
+                     </div>
+                    
+                  <span> <button class="btnn b addtocart">BUY NOW</button></span>
+                   <span> <button class="btnn b buynow">ADD TO CART</button></span>
+                 </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="images/20.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <h4>GROCERY</h4>
+                        <h4> $4.99</h4>
+                        <div style="margin-top: 5px;">
+                          <span><button onclick="Increment(document.getElementById('text12'))"  class="btn">+</button></span>
+                          <span class="textbox"><input type="text" id="text12" class="textstyle" value="0" style="width: 20px; height: 20px;" readonly></span>
+                          <span><button onclick="Decrement(document.getElementById('text12'))"   class="btn">-</button></span>
+                       </div>
+                      
+                    <span> <button class="btnn b addtocart">BUY NOW</button></span>
+                     <span> <button class="btnn b buynow">ADD TO CART</button></span>
+                   </div>
+                  </div>
+        
+        
+
+      </div>
+
+      
+      
+</body>
+</html>
