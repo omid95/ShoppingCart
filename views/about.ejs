@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/product.css">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<script src="/js/input.js"></script>
+<title>Buy Iteams</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand-title"><a href="/" class="acolor">BuyIteams</a></div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="/cart" class="acolor"><i class="fa" style="font-size:24px">&#xf07a;</i> <span class='badge badge-warning' id='lblCartCount'>  <%- JSON.stringify(count) %></span></a></li>
+        <li><a href="#" >Orders</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="product-main">
+    <% user.forEach(function(user){%>
+
+      <div class="product_container">
+        <div class="img-box">
+          <img src="<%=" /" + user.ImageUrl%>">
+        </div>
+        <div class="text-box1">
+          <h1>
+            <%= user.ProductName %>
+          </h1>
+          <p>
+            <%= user.ProductDescription %>
+              <input type="text" hidden id="id1" value="<%=user.ImageUrl %>">
+              <input type="text" hidden id="id2" value="<%=user.ProductPrice %>">
+              <input type="text" hidden id="id3" value="<%= user.ProductName %>">
+              <input type="text" hidden id="id4" value="<%=user.ProductId %>">
+          </p>
+          <div id="dropdown">
+         <span style="font-size: xx-large;"> Quantity:</span>
+          <select class="Q1" name="Quantity" id="Quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+          <h3>
+        Price:   <%= user.ProductPrice %> per Kg
+          </h3>
+
+          <div style="margin-top: 5px;">
+            <span><button onclick="Send(document.getElementById('id1'),document.getElementById('id2'),document.getElementById('Quantity'),document.getElementById('id3'),document.getElementById('id4'))"  class="btn cart"><b>Add to Cart</b></button></span>
+            
+            <span><button    class="btn buy"><b>Buy Now</b></button></span>
+        </div>
+        </div>
+      </div>
+      <%}); %>
+  </div>
+
+
+
+</body>
+
+</html>
