@@ -31,7 +31,7 @@ if ('serviceWorker' in navigator) {
 function values(a)
 {
     var b=parseInt(a);
-    fetch('http://localhost:3001/delete',{
+    fetch('http://localhost:3002/delete',{
    headers:{
        'Content-type':'application/json'
    },
@@ -53,7 +53,7 @@ function Send(aa,bb,cc,dd,ee)
 {
     var total=parseInt(bb.value) * parseInt(cc.value);
     total=total.toString();
-    fetch('http://localhost:3001/insert',{
+    fetch('http://localhost:3002/insert',{
    headers:{
        'Content-type':'application/json'
    },
