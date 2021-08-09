@@ -1,0 +1,21 @@
+{
+    "short_name" : "shopping App",
+    "name": " app PWA",
+    "icons" : [
+        {
+            "src":"./img/icon.png",
+            "type":"image/png",
+            "sizes":"1024x1024"
+        },
+        {
+            "src":"./img/icon 144px.png",
+            "type":"image/png",
+            "sizes":"144x144"
+        }
+    ],
+    "start_url":".",
+    "display":"standalone",
+    "theme_color":"#000000",
+    "background_color":"#ffffff"
+   
+}
